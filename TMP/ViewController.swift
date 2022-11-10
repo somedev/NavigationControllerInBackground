@@ -1,19 +1,15 @@
-//
-//  ViewController.swift
-//  TMP
-//
-//  Created by Eduard Panasiuk on 10.11.22.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.view.backgroundColor = .red
     }
 
-
+    deinit {
+        // this is not called when app is in the bacground
+        print("deinit")
+    }
 }
 
